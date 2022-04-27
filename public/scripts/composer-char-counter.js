@@ -8,8 +8,12 @@ $(document).ready(function() {
     let wordCount = inputText.length;
      const maxValue = 140;
      let results = maxValue - wordCount;
-      $("#counter").val(results);
-     
+     let counter = $("#counter").val(results);
+     // let counter = $("#counter").val(results);
+     if (results <= -1) {
+      $("#counter").addClass("red");
+     } 
+
   });
 
 });
