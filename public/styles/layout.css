@@ -8,18 +8,48 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
 }
 
 /*
  * Global layout stuff
  */
-
-body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
+.btn {
+  color: rgb(244, 239, 230);
+  background-color: rgb(69, 120, 194);
+  border-color: rgb(69, 120, 194);
+  text-decoration-color: initial;
+  display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
 }
-
+body {
+  color: #030207;
+  background-color: #FFFFFF;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+main {
+  width: 90vw;
+  height: 2000px;
+  margin: 0 auto;
+}
+section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

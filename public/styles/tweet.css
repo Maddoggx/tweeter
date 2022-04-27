@@ -1,0 +1,15 @@
+tweet {
+
+}
+
+#tweet-text {
+  color: black;
+  background-color: transparent;
+  text-decoration-style: solid;
+  border: none;
+  border-bottom: 4px solid black;
+  outline: none;
+  width: 100%;
+  resize: none;
+  padding: 1em 0;
+}
