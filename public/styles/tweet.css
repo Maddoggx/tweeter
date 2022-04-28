@@ -1,6 +1,3 @@
-tweet {
-
-}
 
 #tweet-text {
   color: black;
@@ -17,17 +14,46 @@ tweet {
 .red {
   color: red;
 }
-.container {
+.card {
   color: black;
-  border: 1em;
+  margin: 40px 0;
+  border: 4mm ridge rgba(143, 110, 220, 0.6);;
+  height: 230px;
+  width: 75%;
   background-color: white ;
   flex-direction: column;
-  justify-content: space-around;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   transition: 0.3s;
 }
-. {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card:hover {
+  box-shadow:10px 5px 5px rgb(228, 150, 181);
+}
+.line {
+  height: 2px;
+  background-color: black;
+  width: 100%;
+}
+
+.mt-10 {
+  margin-top: 70px;
+}
+.icon-height {
+  width: 32px;
+}
+  .mb-5 {
+  margin-bottom: 5px;
+  }
+
+.footer-trio {
+  color: rgb(141, 70, 129);
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+.footer-trio i:hover {
+  color: rgb(199, 144, 208);
 }
