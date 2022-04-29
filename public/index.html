@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--timeago-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
     <!-- External CSS -->
@@ -35,7 +37,7 @@
     </div>
       <div class="right">
         <span><strong>Write</strong> a new tweet</span>
-       <span><i class="fas fa-angle-double-down"></i></span> 
+       <span class="mt-10"><i class="fas fa-angle-double-down  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i></span> 
       </div>
     </nav>
     <header>
@@ -51,55 +53,57 @@
     <main >
     <h1>Tweets</h1>
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+        <h2 class="font-bungee">Compose Tweet</h2>
+        <form class="someClass">
+          <label class="font" for="tweet-text">What are you humming about?</label>
           <br>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
             <button class="btn" type="submit">Tweet</button>
             <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
-         <article class="card ">
-             <span><i class="fa-brands fa-bilibili"></i></span>
-             <div class="mt-10">
-             <p> hey hey hey!</p>
-            <footer>
-            <div class="line"/>
-            <div class="footer-trio">
-              <div>
-                8 days ago
-              </div>
-              <div>
-                <span><i class="fa-solid fa-flag icon-height"></i></span>
-                <span><i class="fa-solid fa-retweet icon-height"></i></span>
-                <span><i class="fa-regular fa-heart icon-height"></i></span>
-              </div>
-            </div>
-          </footer>
-          </div>
-         </article>
-         <br>
-         <article class="card">
-             <span><i class="fa-brands fa-bilibili"></i></span>
-           <div class="mt-10">
-             <p> Shrek is love Shrek is life!</p>
-            <footer>
-              <div class="line"/>
-              <div class="footer-trio">
-                <div class="mb-5">
-                  3 days ago
+          </form>
+            <section id="card-container">
+              <article class="card ">
+                <span><i class="fa-brands fa-bilibili"></i></span>
+                <div class="mt-10">
+                  <p> hey hey hey!</p>
+                  <footer>
+                    <div class="line"/>
+                    <div class="footer-trio">
+                      <div>
+                        8 days ago
+                      </div>
+                      <div>
+                        <span><i class="fa-solid fa-flag icon-height"></i></span>
+                        <span><i class="fa-solid fa-retweet icon-height"></i></span>
+                        <span><i class="fa-regular fa-heart icon-height"></i></span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-                <div>
-                  <span><i class="fa-solid fa-flag icon-height"></i></span>
-                  <span><i class="fa-solid fa-retweet icon-height"></i></span>
-                  <span><i class="fa-regular fa-heart icon-height"></i></span>
+              </article>
+              <br>
+              <article class="card">
+                <span><i class="fa-brands fa-bilibili"></i></span>
+                <div class="mt-10">
+                  <p> Shrek is love Shrek is life!</p>
+                  <footer>
+                    <div class="line"/>
+                    <div class="footer-trio">
+                      <div class="mb-5">
+                        3 days ago
+                      </div>
+                      <div>
+                        <span><i class="fa-solid fa-flag icon-height"></i></span>
+                        <span><i class="fa-solid fa-retweet icon-height"></i></span>
+                        <span><i class="fa-regular fa-heart icon-height"></i></span>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
-              </div>
-            </footer>
+              </article>
+            </section>
           </div>
-         </article>
-          </div>
-        </form>
       </section>
     </main>
   </body>

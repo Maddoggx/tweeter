@@ -10,25 +10,33 @@
   resize: none;
   padding: 1em 0;
 }
-
+#counter {
+  font-family: 'Bungee', cursive;
+}
+.font-bungee {
+  font-family: 'Bungee', cursive;
+}
 .red {
   color: red;
+}
+.black {
+  color: black;
 }
 .card {
   color: black;
   margin: 40px 0;
   border: 4mm ridge rgba(143, 110, 220, 0.6);;
-  height: 230px;
+  height: 275px;
   width: 75%;
   background-color: white ;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
   padding: 10px;
   transition: 0.3s;
 }
 .card:hover {
-  box-shadow:10px 5px 5px rgb(228, 150, 181);
+  box-shadow:10px 5px 5px rgb(195, 135, 213);
 }
 .line {
   height: 2px;
@@ -37,7 +45,7 @@
 }
 
 .mt-10 {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .icon-height {
   width: 32px;
@@ -56,4 +64,14 @@
 }
 .footer-trio i:hover {
   color: rgb(199, 144, 208);
+}
+.right {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.mt-10 {
+  color: rgb(196, 125, 181);
+  margin-top: 10px;
 }
