@@ -34,7 +34,7 @@ html {
 }
 body {
   color: #030207;
-  background-color: #fafafa;
+  background-color: #FFFFFF;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif; 
 }
@@ -49,6 +49,25 @@ section {
   margin: 0 auto;
   
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.margin {
+  margin-top: 20px ;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.centered {
+padding-left: 50px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .view-point {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #navbar {
+    background-color: #532fa5;
+    
+  }
+}

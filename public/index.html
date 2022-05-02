@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   <!--Meta Info-->
+   <meta name="vImport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> 
+    
     <!--timeago-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Meta Information -->
@@ -13,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
-    
+  
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
@@ -31,7 +34,7 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav id="navbar">
     <div class="left">
       <span>tweeter</span>
     </div>
@@ -40,21 +43,23 @@
        <span class="mt-10"><i class="fas fa-angle-double-down  fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i></span> 
       </div>
     </nav>
-    <header>
+    <div class="view-point">
+    <header id="header">
       <div>
-        <img src="/images/profile-hex.png">
-      </div>
+        <img class="margin" src="/images/profile-hex.png">
       <br>
-      <div>
-        <h2>Maddogg</h2>
+        <h2 class="centered">Maddogg</h2>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main >
-    <h1>Tweets</h1>
+      <h1>Tweets</h1>
+      <div class="error-line">
+        <p class="error-message"></p>
+      </div>
       <section class="new-tweet">
         <h2 class="font-bungee">Compose Tweet</h2>
-        <form class="someClass">
+        <form>
           <label class="font" for="tweet-text">What are you humming about?</label>
           <br>
           <textarea name="text" id="tweet-text"></textarea>
@@ -106,5 +111,6 @@
           </div>
       </section>
     </main>
+   </div>
   </body>
 </html>

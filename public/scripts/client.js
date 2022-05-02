@@ -16,19 +16,28 @@ $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
     const tweetTxt = $.trim($("#tweet-text").val());
-
+const escapedText = escape(tweetTxt);
+    if (tweetTxt !== escapedText) {
+      $(".error-message").text("Invalid Input");
+      $(".error-line").slideDown();
+    }
     if (tweetTxt === "") {
       $(".error-message").text("Error Tweet field empty");
+      $(".error-line").slideDown();
       return;
     }
+
     if (tweetTxt.length > maxChar) {
-      $(".error-message").text("Character Limit exceeded");
-    return;
+      $(".error-message").text("Character Limit Exceeded");
+      $(".error-line").slideDown();
+      return;
     }
+
     $.post("/tweets", $(this).serialize())
     .then((data) => {
       loadTweets();
     })
+
   });
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
@@ -83,3 +92,11 @@ $(document).ready(function () {
   loadTweets();
 
 });
+// $(".tweet-button").click(event => {
+//   $(".error-line").slideUp();
+//   event.preventDefault();
+//   const tweet = $("#tweet-text").val();
+//   if (validateTweet(tweet)) {
+//     postTweetAndRender("#tweet-text");
+//   }
+// });
