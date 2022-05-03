@@ -7,11 +7,13 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 120px;
-  
-}
-
-#header {
   background-image: none;
   background-color: #532fa5;
+  margin: 200px 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+    margin: 120px 0px;
+  }
 }

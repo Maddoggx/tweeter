@@ -18,6 +18,6 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
-!["screenshot name"](url)
-!["screenshot name"](url)
-!["screenshot name"](url)
+!["Tweeter Desktop View"](https://github.com/Maddoggx/tweeter/blob/master/docs/DeskTop%20View%202.0.png)
+!["Tweeter Mobile view"](https://github.com/Maddoggx/tweeter/blob/master/docs/mobile%20view.png)
+!["Tweet box & Tweet post"](https://github.com/Maddoggx/tweeter/blob/master/docs/tweet%20box%20and%20tweets.png)
